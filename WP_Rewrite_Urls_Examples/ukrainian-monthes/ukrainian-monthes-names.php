@@ -18,14 +18,12 @@ register_activation_hook( __FILE__, function() {
 	add_filter( 'date_rewrite_rules', 'replace_monthnum_rules_in_rewrite_map' );
 	add_filter( 'post_rewrite_rules', 'replace_monthnum_rules_in_rewrite_map' );
 	flush_rewrite_rules();
-
 });
 
 register_deactivation_hook( __FILE__, function() {
 	remove_filter( 'date_rewrite_rules', 'replace_monthnum_rules_in_rewrite_map' );
 	remove_filter( 'post_rewrite_rules', 'replace_monthnum_rules_in_rewrite_map' );
 	flush_rewrite_rules();
-
 });
 
 add_action( 'init', function() {
@@ -234,4 +232,3 @@ function admin_notice_monthnum_not_available() {
 	);
 	echo '<div class="notice notice-error"><p>', $message, '</p></div>'; // wpcs: xss ok.
 }
-
