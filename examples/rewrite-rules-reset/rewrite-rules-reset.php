@@ -147,7 +147,7 @@ class ResetRewriteRulesExample {
 			'Remove next sections from rewrite rules generation',
 			function() {
 				echo '<p>', 'Here you can disable some of the default rewrite rules. ',
-					'It is suggested to use <a href="https://wordpress.org/plugins/debug-bar-rewrite-rules/">some plugin</a> to see rewrite rules, in order to see change.',
+					'It is suggested to use <a href="https://wordpress.org/plugins/tags/rewrite-rules/">some plugins</a> to see rewrite rules, in order to see change.',
 					'</p>';
 			},
 			'permalink'
