@@ -1,13 +1,28 @@
 <?php
 /**
- * Plugin Name: Rules Reset - Rules and Matches filtering.
- * Description: Reset URLS to working minimum.
- * Author: Oleg Butuzov
- * Author URI: http://made.ua
+ * Rules Reset - Rules and Matches filtering
  *
- * @package : WP_Rewrite_Urls_Examples / Rules Reset - Rules and Matches filtering.
- **/
-
+ * @category    WordPress_Plugin
+ * @package     Using-Non-Defaults-URIs / Examples / Rewrite Rules and Matches Filtering
+ * @author      Oleg Butuzov <butuzov@made.ua>
+ * @link        Reset URIs array to working minimum.
+ * @copyright   2014-2018 Oleg Butuzov
+ * @license     GPL v2 https://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @wordpress-plugin
+ *
+ * Plugin Name: Ukrainian Monthes Names
+ * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs/
+ *
+ * Description: This plugin allows to use Ukrainian names for monthes instead of <code>%monthnum%</code> in your urls.
+ * Version:     0.1
+ *
+ * Author:      Oleg Butuzov
+ * Author URI:  http://made.ua/
+ *
+ * License:     GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ */
 
 // Immitating init callback thathasn't happend yet.
 register_activation_hook( __FILE__, function() {

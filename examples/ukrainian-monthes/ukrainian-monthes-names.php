@@ -1,14 +1,31 @@
 <?php
 /**
- * Plugin Name: Ukrainian Monthes Names
- * Plugin URI:
- * Description: This plugin allows to use Ukrainian names for monthes instead of <code>%monthnum%</code> in your urls.
- * Author: Oleg Butuzov
- * Author URI: Oleg Butuzov
- * Version: 0.2b
+ * This plugin allows to use Ukrainian names for monthes instead of
+ * <code>%monthnum%</code> in your urls.
  *
- * @package : WP_Rewrite_Urls_Examples / Ukrainian Monthes in Url
- **/
+ * @category    WordPress_Plugin
+ * @package     Using-Non-Defaults-URIs / Examples / Ukrainian Monthes Names
+ * @author      Oleg Butuzov <butuzov@made.ua>
+ * @link        https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ * @copyright   2008-2018 Oleg Butuzov
+ * @license     GPL v2 https://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @wordpress-plugin
+ *
+ * Plugin Name: Ukrainian Monthes Names
+ * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ *
+ * Description: This plugin allows to use Ukrainian names for monthes instead of <code>%monthnum%</code> in your urls.
+ * Version:     0.2
+ *
+ * Author:      Oleg Butuzov
+ * Author URI:  https://made.ua/
+ *
+ * License:     GPL-2.0+
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
+ */
+
+
 
 // *****************************************************************************
 // Main action function setting all trigger actions for our plugin.

@@ -1,14 +1,28 @@
 <?php
 /**
- * Plugin Name: Rewrite Rules Reset Example
- * Plugin URI:
- * Description: Provides UI to Abandone some of the rewrite rules.
- * Author: Oleg Butuzov
- * Author URI: Oleg Butuzov
- * Version: 0.1
+ * General Propose Rewrite Rules Reset Example.
  *
- * @package : WP_Rewrite_Urls_Examples / Rewrite Rules Reset Example
- **/
+ * @category    WordPress_Plugin
+ * @package     Using-Non-Defaults-URIs / Examples / Rewrite Rules Reset Example
+ * @author      Oleg Butuzov <butuzov@made.ua>
+ * @link        https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ * @copyright   2018 Oleg Butuzov
+ * @license     GPL v2 https://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @wordpress-plugin
+ *
+ * Plugin Name: General Propose Rewrite Rules Reset Example.
+ * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ *
+ * Description: Provides UI to abandone some of the rewrite rules using general propose filters and custom logic.
+ * Version:     0.1
+ *
+ * Author:      Oleg Butuzov
+ * Author URI:  https://made.ua/
+ *
+ * License:     GPL-2.0+
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
+ */
 
 register_activation_hook( __FILE__, function() {
 
