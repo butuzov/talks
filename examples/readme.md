@@ -6,4 +6,4 @@ These examples covers a different ways to work with URIs in WordPress CMS, it al
  1. [Decorational - Ukrainian Monthes](ukrainian-monthes)
  2. [Rewrite Rules Reset](rewrite-rules-reset)
  3. [Simle - Rewrite Rules Reset](defaults.php)
- 4. [Query Vars - Custom Posts Per Page Setting](custom-posts-per-page)
+ 4. [Query Vars - Custom Per Page For Post Types](custom-per-page-for-posts-types)

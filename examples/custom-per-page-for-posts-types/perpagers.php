@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom Per Page Number - example of custom query var passed to match query.
+ * Custom Per Page For Post Types - example of custom query var passed to match query.
  *
  * @category    WordPress_Plugin
  * @package     Using-Non-Defaults-URIs / Examples / Custom Per Page Number
@@ -11,7 +11,7 @@
  *
  * @wordpress-plugin
  *
- * Plugin Name: CustomPerPage
+ * Plugin Name: Custom Per Page For Post Types
  * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
  *
  * Description: Example of custom query var passed to match query.
