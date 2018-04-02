@@ -11,10 +11,10 @@
  *
  * @wordpress-plugin
  *
- * Plugin Name: Ukrainian Monthes Names
+ * Plugin Name: Reset WP generated rewrite rules map to working minimum.
  * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs/
  *
- * Description: This plugin allows to use Ukrainian names for monthes instead of <code>%monthnum%</code> in your urls.
+ * Description: This plugin reseting URI in rewrite rules map to working minimum to make debug easy.
  * Version:     0.1
  *
  * Author:      Oleg Butuzov
