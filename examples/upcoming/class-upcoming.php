@@ -32,7 +32,7 @@ class Upcoming {
 	/**
 	 * Function Construct.
 	 */
-	public function __construct() {
+	private function __construct() {
 
 		// Adding Support For upcoming.
 		add_filter( 'query_vars', [ $this, 'query_vars' ] );
