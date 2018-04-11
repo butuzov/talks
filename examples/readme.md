@@ -7,5 +7,5 @@ These examples covers a different ways to work with URIs in WordPress CMS, it al
  2. [Rewrite Rules Reset](rewrite-rules-reset)
  3. [Simple - Rewrite Rules Reset](defaults.php)
  4. [Query Vars - Custom Per Page For Post Types](custom-per-page-for-posts-types)
- 5. soon
+ 5. [Comples Example - Standalone Taxonomy Terms](standalone-terms)
  6. [Complex Example - `Upcoming` functionality](upcoming)
