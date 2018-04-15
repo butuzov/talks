@@ -57,7 +57,7 @@ class PerPage_Manager {
 		foreach ( $this->get_post_types() as $post_type ) {
 			// Local setting.
 			$settings = isset( $this->settings[ $post_type ] )
-							? $this->settings[ $post_type ] : [];
+							? $this->settings[ $post_type ] : new StdClass();
 
 			// Entry for handlers collection.
 			$this->handlers[ $post_type ] = new PerPage_Handler( $post_type, $settings );

@@ -260,7 +260,7 @@ class PerPage_Handler {
 
 		foreach ( $rewrite_rules as $rule => $query ) {
 
-			if ( strpos( $query, '&paged=' ) === false || strpos( $query, $sp ) === false ) {
+			if ( strpos( $query, $sp ) === false ) {
 				$new_rewrite_rules[ $rule ] = $query;
 				continue;
 			}
@@ -273,7 +273,11 @@ class PerPage_Handler {
 			// This is active code but, if google will visit any of paged urls
 			// all of them will generate full list of posts. Don't do that.
 			// Do redirection.
-			$query = preg_replace( '/\&paged=\\$matches\[\d{1,}\]/si', '&sp=1', $query );
+			if ( false === strpos( $query, 'paged=' ) ) {
+				$query .= '&sp=1';
+			} else {
+				$query = preg_replace( '/\&paged=\\$matches\[\d{1,}\]/si', '&sp=1', $query );
+			}
 
 			$new_rewrite_rules[ $rule ] = $query;
 		}
