@@ -55,7 +55,7 @@ add_action( 'init', function() {
 	// Converts 2 landing page and paging rule.
 	add_filter( 'rewrite_rules_array', 'rewrite_rules_array_pages_compact', 12 );
 
-	// 3: Example fo filtering rules
+	// 3: Example of filtering rules
 	// Delete some legacy and unused (by me) rules.
 	add_filter( 'rewrite_rules_array', 'rewrite_rules_array_defaults_reset', 13 );
 });
