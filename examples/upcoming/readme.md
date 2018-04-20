@@ -1,4 +1,4 @@
-# Example 1 - Complex Example - "Upcoming Events/Movies/Books"
+# Example 6 - Complex Example - "Upcoming Events/Movies/Books"
 This plugin shows one of the way to show posts (using build in `future` post status) that going to happen in future.
 
 ### Example Covers

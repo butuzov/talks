@@ -72,6 +72,9 @@ class Upcoming {
 	/**
 	 * Simple way to change taxonomy display for upcoming events.
 	 *
+	 * After this action on taxonome term page future posts will apear,
+	 * no order altered.
+	 *
 	 * @param WP_Query $wp_query Incoming WP_Query object.
 	 * @return WP_Query
 	 */
@@ -80,6 +83,7 @@ class Upcoming {
 		foreach ( get_taxonomies() as $taxonomy_name ) {
 			$taxonomy     = get_taxonomy( $taxonomy_name );
 			$incoming_var = $wp_query->get( $taxonomy->query_var );
+
 			if ( empty( $incoming_var ) ) {
 				continue;
 			}
