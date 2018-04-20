@@ -1,9 +1,9 @@
 <?php
 /**
- * Rules Reset - Rules and Matches filtering
+ * Rules Reset - Rewrite Rules Resets
  *
  * @category    WordPress_Plugin
- * @package     Using-Non-Defaults-URIs / Examples / Rewrite Rules and Matches Filtering
+ * @package     Using-Non-Defaults-URIs / Examples / Rewrite Rules Resets
  * @author      Oleg Butuzov <butuzov@made.ua>
  * @link        Reset URIs array to working minimum.
  * @copyright   2014-2018 Oleg Butuzov
@@ -11,7 +11,7 @@
  *
  * @wordpress-plugin
  *
- * Plugin Name: Reset WP generated rewrite rules map to working minimum.
+ * Plugin Name: Rewrite Rules Resets.
  * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs/
  *
  * Description: This plugin reseting URI in rewrite rules map to working minimum to make debug easy.
@@ -38,6 +38,10 @@ register_deactivation_hook( __FILE__, function() {
 
 // Shortening way to rewrite rules..
 add_action( 'init', function() {
+	add_filter( 'category_rewrite_rules', '__return_empty_array' );
+	add_filter( 'tag_rewrite_rules', '__return_empty_array' );
+	add_filter( 'post_format_rewrite_rules', '__return_empty_array' );
+	add_filter( 'date_rewrite_rules',  '__return_empty_array' );
 	add_filter( 'rewrite_rules_array', 'rewrite_rules_array_defaults_reset' );
 });
 
@@ -81,6 +85,11 @@ function rewrite_rules_array_defaults_reset( array $rules ) : array {
 	$feeds = implode( '|', $wp_rewrite->feeds );
 	$rules = array_filter( $rules, function( $rewrite_rule ) use ( $feeds ) {
 		return strpos( $rewrite_rule, $feeds ) === false;
+	}, ARRAY_FILTER_USE_KEY);
+
+	// Removes Legacy URLS
+	$rules = array_filter( $rules, function( $rewrite_rule ) {
+		return strpos( $rewrite_rule, '.*wp-' ) === false;
 	}, ARRAY_FILTER_USE_KEY);
 
 	return $rules;
