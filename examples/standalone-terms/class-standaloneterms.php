@@ -114,6 +114,7 @@ class StandaloneTerms {
 					FROM {$wpdb->termmeta}
 					WHERE term_id IN (%s) and meta_key = 'landing_url'
 					GROUP BY `meta_value` ";
+
 		$query = sprintf( $query, implode( ',', array_keys( $terms ) ) );
 
 		$results = $wpdb->get_results( $query ); // WP-CS: db call ok, cache ok, unprepared SQL.
@@ -133,7 +134,10 @@ class StandaloneTerms {
 			foreach ( $items as $k => $term ) {
 				$items[ $k ] = $terms[ $term ];
 			}
-			return sprintf( '^%s(%s)/?', $base, implode( ',', $items ) );
+
+			// You can additionaly sort terms in order to avoid
+			// aa|aaa|aaaa gotches of regular expressions.
+			return sprintf( '%s(%s)/?$', $base, implode( '|', $items ) );
 		}, $results);
 
 		// Only one match rule.

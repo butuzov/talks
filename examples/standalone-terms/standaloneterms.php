@@ -33,5 +33,6 @@ include_once __DIR__ . '/class-standaloneterms.php';
 // It uses 'genres-mpte' from 'movies.php' as example taxonomy for our needs.
 
 add_action( 'init', function() {
-	StandaloneTerms::getInstance()->register_taxonomy( 'genres-mpte' );
+	get_taxonomy('genres-mpte') &&
+		StandaloneTerms::getInstance()->register_taxonomy( 'genres-mpte' );
 });
