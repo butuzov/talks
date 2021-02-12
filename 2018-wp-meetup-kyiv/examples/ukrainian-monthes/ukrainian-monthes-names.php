@@ -6,14 +6,14 @@
  * @category    WordPress_Plugin
  * @package     Using-Non-Defaults-URIs / Examples / Ukrainian Monthes Names
  * @author      Oleg Butuzov <butuzov@made.ua>
- * @link        https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ * @link        https://github.com/butuzov/talks/tree/master/2018-wp-meetup-kyiv
  * @copyright   2008-2018 Oleg Butuzov
  * @license     GPL v2 https://www.gnu.org/licenses/gpl-2.0.html
  *
  * @wordpress-plugin
  *
  * Plugin Name: Ukrainian Monthes Names
- * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ * Plugin URI:  https://github.com/butuzov/talks/tree/master/2018-wp-meetup-kyiv
  *
  * Description: This plugin allows to use Ukrainian names for monthes instead of <code>%monthnum%</code> in your urls.
  * Version:     0.2

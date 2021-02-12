@@ -5,14 +5,14 @@
  * @category    WordPress_Plugin
  * @package     Using-Non-Defaults-URIs / Examples / Rewrite Rules Reset Example
  * @author      Oleg Butuzov <butuzov@made.ua>
- * @link        https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ * @link        https://github.com/butuzov/talks/tree/master/2018-wp-meetup-kyiv
  * @copyright   2018 Oleg Butuzov
  * @license     GPL v2 https://www.gnu.org/licenses/gpl-2.0.html
  *
  * @wordpress-plugin
  *
  * Plugin Name: General Propose Rewrite Rules Reset Example.
- * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ * Plugin URI:  https://github.com/butuzov/talks/tree/master/2018-wp-meetup-kyiv
  *
  * Description: Provides UI to abandone some of the rewrite rules using general propose filters and custom logic.
  * Version:     0.1

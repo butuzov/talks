@@ -5,14 +5,14 @@
  * @category    WordPress_Plugin
  * @package     Using-Non-Defaults-URIs / Examples / Custom Per Page Number
  * @author      Oleg Butuzov <butuzov@made.ua>
- * @link        https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ * @link        https://github.com/butuzov/talks/tree/master/2018-wp-meetup-kyiv
  * @copyright   2018 Oleg Butuzov
  * @license     GPL v2 https://www.gnu.org/licenses/gpl-2.0.html
  *
  * @wordpress-plugin
  *
  * Plugin Name: Custom Per Page For Post Types
- * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs
+ * Plugin URI:  https://github.com/butuzov/talks/tree/master/2018-wp-meetup-kyiv
  *
  * Description: Example of custom query var passed to match query.
  * Version:     0.1

@@ -12,7 +12,7 @@
  * @wordpress-plugin
  *
  * Plugin Name: Rewrite Rules Reseter.
- * Plugin URI:  https://github.com/butuzov/WordPress-Using-Non-Defaults-URIs/
+ * Plugin URI:  https://github.com/butuzov/talks/tree/master/2018-wp-meetup-kyiv/
  *
  * Description: Resets Generated URI to some working minimum.
  * Version:     0.2
